@@ -1,162 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Periodico el Faro</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css"> 
-  <body>
-    <body bgcolor="#99A3A4">
-    </body>
-    
+	<title>Registro Usuarios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+    <form method="post">
+    	<h1>Registro de Datos Clínicos</h1>
+    	<input type="text" name="rut" placeholder="RUT (XX.XXX.XXX-X)">
+        <input type="text" name="nombre" placeholder="Nombres">
+        <input type="text" name="apellido" placeholder="Apellidos">
+        <input type="text" name="direccion" placeholder="Dirección">
+        <input type="text" name="ciudad" placeholder="Ciudad">
+        <input type="number" name="telefono" placeholder="Teléfono">
+        <input type="email" name="email" placeholder="Email">
+        <input type="text" name="fnac" placeholder="Fecha de Nacimiento">
+        <p><option>
+        
+        </option>
+        <p>Estado Civil: 
+           <select name="ecivil">
+             <option>Soltero(a)</option>
+             <option>Casado(a)</option>
+             <option>Viudo(a)</option>
+           </select>
+        </p>
+        <input type="text" name="comentarios" placeholder="Comentarios">
+        <input type="submit" name="register" value="Guardar">
+        <input type="reset" value="Limpiar" onclick="location.href = 'index.php' ">
+        <input type="button" name="Cerrar" id="button" value="Cerrar" onclick="location.href = 'https://www.google.com' ">
+    
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-	<div class="container">
-  <div class="navbar-brand">
-     <img src="./imagenes/Faro.png " width="230" height="132">
-    </div>
-    <div class="navbar-end">
-      <p class="control">
-      <a class="button is-link is is-light is-default" href="./index.html"> 
-        Inicio 
-      </a>
-      <a class="button is-link is is-light is-default" href="./generales.html">
-        Generales
-      </a> 
-      <a class="button is-link is is-light is-default" href="./negocios.html">
-        Negocios
-      </a> 
-      <a class="button is-link is is-light is-default" href="./deporte.html">
-        Deporte
-      </a>
-      <a class="button is-link is is-light is-default" href="./Salud.html">
-        Salud
-      </a>
-      <a class="button is-primary is is-light is-default" href="./contacto.html">
-        Contacto
-     </a>
-        <a class="button is-primary is is-light is-default" href="./Controllers/UsuarioController.php?action=login" class="item">
-        Login
-        </a>
-        <a class="button is-primary is is-light is-default" href="./Controllers/RegistroController.php?action=Registro" class="item">
-          Registro
-       </a>
-        <a class="button is info is-light is-default" target="_blank" href="https://www.accuweather.com/es/cl/santiago/60449/weather-forecast/60449" class="item"> 
-        Clima 
-      </a>
-      <a class="button is info is-light is-default" target="_blank" href="https://www.sii.cl/valores_y_fechas/uf/uf2021.htm" class="item">
-        UF 
-      </a>
-       </div>
-</nav>
-<section class="hero is-small is-link ">
-  <div class="hero-body">
-      <div class="container">
-       <h1 class="title">
-      <strong>Periódico "El Faro"</strong></h1><a target="_blank" href="https://www.economicos.cl/">Avisos Económicos</a>
-      </h1>  
-    </div>
-  </div>
-</section>
-    <script> 
-      function ventanaSecundaria (URL){ 
-      window.open(URL,"ventana1","width=800,height=600,scrollbars=NO") 
-        } 
-    </script>    
-  <section class="hero is-small is-danger">
-  <div class="hero-body">
-    <div class="container">
-     <h1 class="title">
-       <strong>NOTICIAS DESTACADAS</strong> <a href="javascript:ventanaSecundaria('https://news.google.com/topstories?hl=es-419&gl=CL&ceid=CL:es-419')">Ver más...</a> 
-     </h1>  
-    </div>
-  </div>
-</section>
+    </form>
 
-<div id="cont_c763ce74cb1e209f97f73da9289b7159"><script type="text/javascript" async src="https://www.meteored.cl/wid_loader/c763ce74cb1e209f97f73da9289b7159"></script></div>
-
-
-<br>
-<div class="container">
-  <div class="columns">
-  <div class="column is-3">
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title"> 
-      <a href="./negocios.html">NEGOCIOS</a>
-    </p>
-  </header>
-
-  <div class="card-content">
-    <div class="content">
-     <img src="imagenes/Comerciantes.png">
-     La Contraloría dio a conocer su dictamen sobre una solicitud de pronunciamiento presentada por diversos parlamentarios y del Ministerio de Economía respecto al Bono Pymes, que dejó fuera a 50 mil feriantes del país.
-     Lo anterior respecto a uno de los requisitos que los microempresarios del rubro de ferias libres deben cumplir para acceder al bono de $1 millón con cargo fiscal para apoyar a las micro y pequeñas empresas por la crisis generada por el covid.
-    </div>
-  </div>
-</div>
-
-
-    </div>
-    <div class="column is-3">
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">
-      <a href="./generales.html">NOTICIAS GENERALES</a>      
-    </p>
-
-  </header>
-  <div class="card-content">
-    <div class="content">
-      <img src="imagenes/Francia.jpg">
-      Un gran susto se vivió este sábado en la primera etapa del Tour de Francia, cuando un imprudente espectador causó una estrepitosa caída del pelotón casi completo de ciclistas, donde algunos incluso debieron abandonar la carrera por los golpes sufridos.
-    </div>
-  </div>
-
-</div>
-
-</div>
-<div class="column is-3">
-<div class="card">
-<header class="card-header">
-<p class="card-header-title">
-  <a href="./deporte.html">DEPORTES</a>      
-</p>
-
-</header>
-<div class="card-content">
-<div class="content">
-  <img src="imagenes/Italia.jpg">
-  Italia superó en el alargue la resistencia de Austria y pasó a cuartos de final de la Eurocopa.
-  La selección de Italia logró un esforzado paso a los cuartos de final de la Eurocopa este sábado, luego de vencer en el alargue a Austria por 2-1 en un encendido encuentro disputado en Wembley.
-</div>
-</div>
-
-
-</div>
-
-</div>
-<div class="column is-3">
-<div class="card">
-<header class="card-header">
-<p class="card-header-title">
-  <a href="./Salud.html">SALUD</a>      
-</p>
-
-</header>
-<div class="card-content">
-<div class="content">
-  <img src="imagenes/Covid.png">
-  La paciente, que reside en Estados Unidos y viajó por el fallecimiento de un familiar, tuvo dos PCR negativos: el que se realizó antes de viajar y el que se le tomó en el aeropuerto. Pero un tercero, tomado a una semana de su arribo, comprobó la presencia del virus. Frente a esta mutación del virus, el Minsal endureció la categoría de contacto estrecho y serán calificados como tales todos quienes coincidan con un infectado con este linaje, independiente del tiempo de exposición y del uso -o no- de mascarilla.
-</div>
-
-</div>
-    </div>
-  </div>
-</div>
-
-<br><br>
-</body>
+</html>
